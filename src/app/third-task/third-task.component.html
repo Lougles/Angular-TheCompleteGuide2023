@@ -1,0 +1,10 @@
+<button
+        class="btn btn-primary"
+        (click)="onhandleClickBtn()"
+>Desiplay Details</button>
+<p *ngIf="status">secret password</p>
+<p
+        *ngFor="let i of btnClickLog"
+        [ngStyle]="i >= 5 && {backgroundColor: 'blue'}"
+        [ngClass]="i >=5 && {color: 'color'}"
+> Number {{i}} </p>
